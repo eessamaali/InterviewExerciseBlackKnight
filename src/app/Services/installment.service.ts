@@ -8,6 +8,7 @@ export class InstallmentService {
   constructor() { }
 
   formatTwoDecimalPlaces(n:number){
+    var n = Number(n.toFixed(3));
     var str = n.toString();
     var index =str.indexOf(".");
     if(index>0){ // input is a decimal
